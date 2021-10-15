@@ -36,7 +36,7 @@ namespace CalculadoraDinamica
                 for (int i = 0; i <= 2; i++)
                 {
                     button = new Button();
-                    button.Style = (Style)this.Resources["Botones"];
+                    button.Style = (Style)Resources["Botones"];
                     PrincipalGrid.Children.Add(button);
                     Grid.SetColumn(button, i);
                     Grid.SetRow(button, j);
