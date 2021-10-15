@@ -43,8 +43,10 @@ namespace CalculadoraDinamica
                     button.Tag = tag;
                     viewbox = new Viewbox();
                     button.Content = viewbox;
-                    textBlock = new TextBlock();
-                    textBlock.Text = tag.ToString();
+                    textBlock = new TextBlock
+                    {
+                        Text = tag.ToString()
+                    };
                     viewbox.Child = textBlock;
                     tag++;
                 }
